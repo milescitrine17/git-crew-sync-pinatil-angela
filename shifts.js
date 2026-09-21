@@ -7,7 +7,7 @@ function calculatePay(hours, rate) {
     return Math.round((8 * rate) + ((hours - 8) * rate * 1.5));
   }
 
-  return Math.round(hours * rate);
+  return Math.floor(hours * rate);
 }
 
 module.exports = { isValidShift, calculatePay };
